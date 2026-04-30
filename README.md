@@ -2,7 +2,7 @@
 
 **Grafana-Gdecrypt** is a lightweight Python utility designed to decrypt secrets stored in Grafana v8+ and v9+ databases. This tool is particularly useful for post-exploitation scenarios following a directory traversal vulnerability (such as **CVE-2021-43798**), where an attacker has obtained the `grafana.db` and the `secret_key` from `grafana.ini`.
 
-The utility automates the extraction and decryption of `basicAuthPassword` and other sensitive blobs found in the `data_source` and `user` tables.
+The utility automates the extraction and decryption of `basicAuthPassword` and other sensitive blobs found in the `data_source` table.
 
 ## Features
 
@@ -44,7 +44,7 @@ python3 gdecrypt.py -s "YOUR_GRAFANA_SECRET_KEY" -p "ENCRYPTED_PASSWORD_BLOB"
 
 - `-s`, `--secret`: The `secret_key` from the Grafana configuration.
     
-- `-p`, `--password`: The encrypted password/secret (Base64 or Hex).
+- `-p`, `--password`: The encrypted password/secret (Base64).
     
 - `--salt`: Optional manual salt string if the blob deviates from the standard 8-byte prefix.
     
