@@ -12,7 +12,7 @@ The utility automates the extraction and decryption of `basicAuthPassword` and o
     
 - **Dynamic Salt Handling:** Automatically extracts the 8-byte salt prefix from blobs or allows for manual salt overrides.
     
-- **Flexible Input:** Accepts encrypted payloads in both **Base64** and **Hex** formats.
+- **Input:** Accepts payloads in both **Base64** format.
     
 
 ## Prerequisites
