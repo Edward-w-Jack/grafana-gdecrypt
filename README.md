@@ -27,7 +27,7 @@ The utility automates the extraction and decryption of `basicAuthPassword` and o
 Clone the repository and install the required dependencies:
 
 ```
-git clone [https://github.com/asquishynerd/grafana-gdecrypt.git](https://github.com/asquishynerd/grafana-gdecrypt.git)
+git clone [https://github.com/Edward-w-Jack/grafana-gdecrypt.git](https://github.com/Edward-w-Jack/grafana-gdecrypt.git)
 cd grafana-gdecrypt
 pip install -r requirements.txt
 ```
